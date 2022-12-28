@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Teleprompter</title>
+<link rel="stylesheet" href="./style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+
+</head>
+<body>
+  <div id="container">
+    <div id="controller">
+      SPEED<input type="range" min="1" max="32" value="32" class="slider" id="speedControll">
+      SIZE<input type="range" min="5" max="20" value="8" class="slider" id="sizeControll">
+    </div>
+    <div class="scrollBox">
+      <p id="text" contentEditable="true">text
+      </p>
+      <div class="box"></div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
